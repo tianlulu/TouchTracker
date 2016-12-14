@@ -110,8 +110,8 @@
 		F1600EAA1DFFA8AA00A4B5C7 /* TouchTracker */ = {
 			isa = PBXGroup;
 			children = (
-				F1600EAE1DFFA8AB00A4B5C7 /* AppDelegate.h */,
 				F1600EAF1DFFA8AB00A4B5C7 /* AppDelegate.m */,
+				F1600EAE1DFFA8AB00A4B5C7 /* AppDelegate.h */,
 				F1600EB11DFFA8AB00A4B5C7 /* ViewController.h */,
 				F1600EB21DFFA8AC00A4B5C7 /* ViewController.m */,
 				F1600EDE1DFFA8FE00A4B5C7 /* TLLine.h */,

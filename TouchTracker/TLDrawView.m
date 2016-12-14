@@ -52,6 +52,8 @@
         //拖拽手势
         self.moveRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(moveLine:)];
         self.moveRecognizer.delegate  = self;
+        //cancelsTouchesInView：默认YES.意思就是说一旦手势被识别，那么就调用[touchView touchesCancelled:withEvent]
+        self.moveRecognizer.cancelsTouchesInView = NO;
         [self addGestureRecognizer:self.moveRecognizer];
     }
     return self;
@@ -250,6 +252,7 @@
         self.selectedLine.begin = begin;
         self.selectedLine.end = end;
         [self setNeedsDisplay];
+        //使对象增量的报告移动距离
         [gr setTranslation:CGPointZero inView:self];
     }
 }
